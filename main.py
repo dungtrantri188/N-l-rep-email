@@ -114,7 +114,7 @@ def main():
             """
             
             # Gọi Gemini API
-            model = genai.GenerativeModel('gemini-1.5-pro-latest')
+            model = genai.GenerativeModel('gemini-2.5-flash')
             response = model.generate_content(system_prompt)
             
             # Gửi email trả lời
@@ -126,4 +126,5 @@ def main():
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
+
     main()
